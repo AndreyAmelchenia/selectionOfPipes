@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="StyleSheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section style="height: auto !important; min-height: 0px !important;">
+  <div class="rozschot" style="height: auto !important;">
+    <h4 class="notsee">Название вкладки в браузере:
+    <input type="text" autocomplete="on" id="forTitle" size="30"></h4>
+    <h1>Диаметр труб</h1>
+    <h4>
+      <span>Нагрузка на расчетном участке:</span>
+      <input class="rozschotInput pipe" type="tel" autocomplete="on" id="kvt" name="kvt" size="8">кВт <br>
+      <span>Температура подающего теплоносителя:</span><input class="rozschotInput pipe" type="tel" autocomplete="on" id="th" name="th" size="3">°С<br>
+      <span>Температура обратного теплоносителя:</span><input class="rozschotInput pipe" type="tel" autocomplete="on" id="tc" name="tc" size="3">°С<br>
+      <span>Расход теплоносителя:</span><input class="rozschotInput pipe" type="tel" readonly="" id="qi" name="qi" size="8"> м³/ч<span></span>
+      <input class="rozschotInput pipe" type="tel" readonly="" id="qii" name="qii" size="8"> кг/ч<br>
+      Для стальных труб:<br>
+      Диаметр:
+      <select class="rozschotInput pipe" id="diametr" name="diametr">
+          <option value="0">Auto</option>
+          <option value="15">Ø15</option>
+          <option value="20">Ø20</option>
+          <option value="25">Ø25</option>
+          <option value="32">Ø32</option>
+          <option value="40">Ø40</option>
+          <option value="50">Ø57x3.5</option>
+          <option value="65">Ø76x3.5</option>
+          <option value="80">Ø89x3.5</option>
+          <option value="100">Ø108x4</option>
+          <option value="125">Ø133x4</option>
+          <option value="150">Ø159x4.5</option>
+          <option value="200">Ø219x6</option>
+          <option value="250">Ø273x7</option>
+          <option value="300">Ø325x8</option>
+          <option value="350">Ø377x9</option>
+          <option value="400">Ø426x7</option>
+      </select>
+      <br>
+      <span>Рекомендуемый диаметр для внутренних сетей:</span><input class="rozschotInput pipe" type="tel" readonly="" id="diam" name="diam" size="8 value"> мм<br>
+      <span>Расход из таблицы:</span><input class="rozschotInput pipe" type="tel" readonly="" id="gtabl" size="8"> кг/год<br>
+      <span>Потеря давления по длине:</span><input class="rozschotInput pipe" type="tel" readonly="" id="ptabl" size="8"> кгс/м² м<br>
+      <span>Скорость теплоносителя:</span><input class="rozschotInput pipe" type="tel" readonly="" id="vtabl" size="8"> м/с<br>
+    </h4>
+  </div>
+  <div class="formylu">
+    <div class="imgbox first"><img src="./assets/trybu1.png" align="left">
+    <div class="imgbox2 qi1 qi"></div>
+    <div class="imgbox2 kvt"></div>
+    <div class="imgbox2 th"></div>
+    <div class="imgbox2 tc"></div>
+    </div>
+    <div class="imgbox"><img src="./assets/trybu2.png" align="left">
+    <div class="imgbox2 qii"></div>
+    <div class="imgbox2 qi2 qi"></div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
